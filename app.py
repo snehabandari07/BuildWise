@@ -399,7 +399,7 @@ from groq import Groq
 
 # Initialize Groq Client
 # In a production app, use st.secrets["GROQ_API_KEY"]
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "groq_key"
 client = Groq(api_key=GROQ_API_KEY)
 
 def generate_plan(project_details):
@@ -499,7 +499,7 @@ def generate_plan(project_details):
         }
 
 # --- AI Blueprint Generation (Hugging Face) ---
-HF_API_KEY = "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"
+HF_API_KEY = "huggingface_key"
 hf_client = InferenceClient(token=HF_API_KEY)
 
 # Ensure blueprints directory exists
@@ -1105,3 +1105,4 @@ def main():
 if __name__ == "__main__":
     ensure_data_dir()
     main()
+
